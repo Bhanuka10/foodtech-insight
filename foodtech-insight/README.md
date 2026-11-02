@@ -1,16 +1,27 @@
-# React + Vite
+# FoodTech Insight — editorial website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Single-page editorial site for **FoodTech Insight**, the official E-magazine of the
+Sabaragamuwa University Food Science and Technology Association (SUFSTA).
 
-Currently, two official plugins are available:
+Built with React 19 + Vite. No UI libraries; styling is hand-written CSS using the
+project's green editorial palette and Playfair Display / Manrope typography.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run
 
-## React Compiler
+```bash
+npm install
+npm run dev      # local dev server
+npm run build    # production build in dist/
+npm run preview  # preview the build
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Content
 
-## Expanding the ESLint configuration
+All content is sourced from the Volume 1, Issue 2 (August 2026) PDF and lives in `src/data/`:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `articles.js` — the 26 articles (titles, authors, affiliations, PDF page numbers, descriptions drawn from each article's opening text).
+- `team.js` — chief editor, editorial board, editorial assistants and reviewers (page 2 of the magazine).
+- `magazine.js` — edition metadata, contact details and the editor's note quote.
+
+Images in `public/images/` are extracted from the magazine PDF. The downloadable PDF is
+`public/FoodTech-Insight-Vol1-Issue2.pdf`; "Read Article" links open it at the article's page.
