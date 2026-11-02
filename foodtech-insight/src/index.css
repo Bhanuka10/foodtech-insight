@@ -1,17 +1,16 @@
 :root {
   font-family: 'DM Sans', Arial, sans-serif;
-  color: #183c32;
-  background: #fbfcf8;
+  color: #173b38;
+  background: #fff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-optical-sizing: auto;
 }
 
 * { box-sizing: border-box; }
 html { min-width: 320px; scroll-behavior: smooth; }
 body { min-width: 320px; min-height: 100vh; margin: 0; }
 button, input { font: inherit; }
-button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid #729a5d; outline-offset: 3px; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid #318b7c; outline-offset: 3px; }
 #root { width: 100%; min-height: 100vh; }
