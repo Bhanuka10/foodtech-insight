@@ -5,7 +5,7 @@ export const editorialBoard = [
   { name: 'Dr. Thilini C. Kananke', role: 'Editorial Board' },
   { name: 'Dr. D.A. Choshani K. Dalukdeniya', role: 'Editorial Board' },
   { name: 'Dr. R. Chamodini N. Thilakarathne', role: 'Editorial Board' },
-  { name: 'Ms. K.K.G.M. Kavindya', role: 'Editorial Board' },
+  { name: 'Ms. K.K.M.G. Kavindya', role: 'Editorial Board' },
 ]
 
 export const editorialAssistants = [
@@ -14,12 +14,12 @@ export const editorialAssistants = [
 ]
 
 export const reviewers = [
-  'Dr. W.S.M. Senevirathne',
-  'Dr. R.C.N. Thilakarathna',
-  'Dr. D.A.C.K. Dalukdeniya',
-  'Dr. P.G.I. Dias',
-  'Mr. M.C.N. Jayasooriya',
   'Mrs. K.M. Somawathie',
+  'Dr. W.S.M. Senevirathne',
+  'Mr. M.C.N. Jayasooriya',
+  'Dr. P.G.I. Dias',
+  'Dr. D.A.C.K. Dalukdeniya',
+  'Dr. R.C.N. Thilakarathna',
   'Mr. K.G.P.N. Bandara',
   'Ms. Malmi Wickramasinghe',
   'Ms. Narmada Weerakkody',
@@ -27,7 +27,7 @@ export const reviewers = [
   'Ms. Sumudu Dehideniya',
 ]
 
-/** "Dr. Gayani I. Dias" -> "GD"; "Ms. K.K.G.M. Kavindya" -> "KK" */
+/** "Dr. Gayani I. Dias" -> "GD"; "Ms. K.K.M.G. Kavindya" -> "KK" */
 export function initials(name) {
   const parts = name
     .replace(/^(Dr|Mr|Mrs|Ms|Prof)\.\s*/i, '')
