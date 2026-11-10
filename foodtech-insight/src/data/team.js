@@ -10,7 +10,7 @@ export const editorialBoard = [
 
 export const editorialAssistants = [
   { name: 'Mr. H.M.P.G.C.D. Bandara', role: 'President of SUFSTA' },
-  { name: 'Mr. L.G.U.S. Dharmasiri', role: 'Editorial Assistant' },
+  { name: 'Mr. L.G.U.S. Dharmasiri', role: 'Magazine Designer' },
   { name: 'Mr. W.R.O. Karunarathna', role: 'Editor of SUFSTA' },
 ]
 
