@@ -9,10 +9,10 @@ export const support = {
   endpoint: 'https://script.google.com/macros/s/AKfycbynwQGQ2i5fkv9ZvdnCoFmPaKf6zxzMP79BAyftws5TlgoHJSpz3qAUAt7ozCz8PJHv/exec',
   options: [
     {
-      id: 'coffee', icon: 'coffee', title: 'Buy Us a Coffee',
+      id: 'sponsor', icon: 'handshake', title: 'Become a Sponsor',
       description:
-        'A small gesture that keeps late editing nights, layout sessions and review rounds going. Tell us a little about yourself and our editorial team will reach out personally.',
-      cta: 'Buy us a coffee', featured: true,
+        'Partner with the magazine as an individual or organisation and be recognised across our editions and events. Tell us a little about yourself and our editorial team will reach out personally.',
+      cta: 'Become a sponsor', featured: true,
     },
   ],
   preferences: [

@@ -80,6 +80,9 @@ function Hero() {
             <a className="btn" href={magazine.pdf} download>
               Download Digital Copy <ArrowDown />
             </a>
+            <a className="btn btn--ghost" href="#support">
+              Become a Sponsor <ArrowRight />
+            </a>
             <a className="link-arrow" href="#contents">
               Explore Contents <ArrowRight />
             </a>
