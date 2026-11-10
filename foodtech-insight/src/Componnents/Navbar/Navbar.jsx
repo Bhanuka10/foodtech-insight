@@ -28,10 +28,13 @@ function Navbar() {
   return (
     <header className={`nav${scrolled ? ' nav--scrolled' : ''}${open ? ' nav--open' : ''}`}>
       <div className="container nav__bar">
-        <a className="nav__brand" href="#home" aria-label="FoodTech Insight — home" onClick={() => setOpen(false)}>
-          <span className="nav__mark" aria-hidden="true" />
-          <span className="nav__wordmark">FoodTech <em>Insight</em></span>
-        </a>
+        <div className="nav__left">
+          <img className="nav__logo" src="/images/SUFSTA LOGO.png" alt="SUFSTA" />
+          <span className="nav__divider" aria-hidden="true" />
+          <a className="nav__brand" href="#home" aria-label="FoodTech Insight — home" onClick={() => setOpen(false)}>
+            <span className="nav__wordmark">FoodTech <em>Insight</em></span>
+          </a>
+        </div>
 
         <nav className="nav__links" aria-label="Primary">
           {links.map((l) => (
