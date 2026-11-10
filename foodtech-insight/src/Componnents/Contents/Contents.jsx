@@ -1,13 +1,17 @@
 import { articles } from '../../data/articles.js'
 import { magazine, editorsNote } from '../../data/magazine.js'
+import { useOpenArticle } from '../../reader/useReader.js'
 import './Contents.css'
 
 const pad = (n) => String(n).padStart(2, '0')
 
 function ArticleCard({ article }) {
+  const openArticle = useOpenArticle()
+  const href = `${magazine.pdf}#page=${article.page}`
+  const onClick = openArticle(article.page, article.title)
   return (
     <article className="card">
-      <a className="card__media" href={`${magazine.pdf}#page=${article.page}`} target="_blank" rel="noreferrer" tabIndex={-1} aria-hidden="true">
+      <a className="card__media" href={href} onClick={onClick} target="_blank" rel="noreferrer" tabIndex={-1} aria-hidden="true">
         <img src={article.image} alt="" loading="lazy" width="900" height="506" />
       </a>
       <div className="card__body">
@@ -16,12 +20,12 @@ function ArticleCard({ article }) {
           <span className="card__cat">{article.category}</span>
         </div>
         <h3 className="card__title">
-          <a href={`${magazine.pdf}#page=${article.page}`} target="_blank" rel="noreferrer">{article.title}</a>
+          <a href={href} onClick={onClick} target="_blank" rel="noreferrer">{article.title}</a>
         </h3>
         <p className="card__desc">{article.description}</p>
         <div className="card__foot">
           <span className="card__author">{article.authors.join(', ')}</span>
-          <a className="card__read" href={`${magazine.pdf}#page=${article.page}`} target="_blank" rel="noreferrer" aria-label={`Read ${article.title} (page ${article.page})`}>
+          <a className="card__read" href={href} onClick={onClick} target="_blank" rel="noreferrer" aria-label={`Read ${article.title} (page ${article.page})`}>
             Read Article
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
               <path d="M2 8h11M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />

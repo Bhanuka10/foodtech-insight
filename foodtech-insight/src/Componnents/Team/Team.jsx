@@ -1,6 +1,7 @@
 import { chiefEditor, editorialBoard, editorialAssistants, reviewers, studentReviewers, initials } from '../../data/team.js'
 import { articles } from '../../data/articles.js'
 import { magazine } from '../../data/magazine.js'
+import { useOpenArticle } from '../../reader/useReader.js'
 import './Team.css'
 
 const pad = (n) => String(n).padStart(2, '0')
@@ -18,6 +19,7 @@ function Person({ name, role, size = 'md', delay = 0 }) {
 }
 
 function Team() {
+  const openArticle = useOpenArticle()
   return (
     <section className="section team" id="contributors" aria-labelledby="team-title">
       <div className="container">
@@ -101,7 +103,7 @@ function Team() {
                   <strong>{a.authors.join(', ')}</strong>
                   <span>{a.affiliation}</span>
                 </div>
-                <a className="index__title" href={`${magazine.pdf}#page=${a.page}`} target="_blank" rel="noreferrer">
+                <a className="index__title" href={`${magazine.pdf}#page=${a.page}`} onClick={openArticle(a.page, a.title)} target="_blank" rel="noreferrer">
                   {a.title}
                 </a>
                 <span className="index__page">p. {pad(a.page)}</span>

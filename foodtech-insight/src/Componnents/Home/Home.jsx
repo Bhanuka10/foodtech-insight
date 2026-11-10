@@ -5,22 +5,27 @@ import Contents from '../Contents/Contents.jsx'
 import About from '../About/About.jsx'
 import Team from '../Team/Team.jsx'
 import Footer from '../Footer/Footer.jsx'
+import { ReaderProvider } from '../../reader/ReaderContext.jsx'
+import Reader from '../../reader/Reader.jsx'
 import './Home.css'
 
 function Home() {
   useReveal()
 
   return (
-    <div className="site">
-      <Navbar />
-      <main>
-        <Hero />
-        <Contents />
-        <About />
-        <Team />
-      </main>
-      <Footer />
-    </div>
+    <ReaderProvider>
+      <div className="site">
+        <Navbar />
+        <main>
+          <Hero />
+          <Contents />
+          <About />
+          <Team />
+        </main>
+        <Footer />
+      </div>
+      <Reader />
+    </ReaderProvider>
   )
 }
 
