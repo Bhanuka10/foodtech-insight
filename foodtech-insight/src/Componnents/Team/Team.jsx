@@ -1,4 +1,4 @@
-import { chiefEditor, editorialBoard, editorialAssistants, reviewers, initials } from '../../data/team.js'
+import { chiefEditor, editorialBoard, editorialAssistants, reviewers, studentReviewers, initials } from '../../data/team.js'
 import { articles } from '../../data/articles.js'
 import { magazine } from '../../data/magazine.js'
 import './Team.css'
@@ -54,10 +54,22 @@ function Team() {
           <div className="team__label" data-reveal>
             <span>02</span>Editorial Assistants
           </div>
-          <div className="team__assistants">
-            {editorialAssistants.map((p, i) => (
-              <Person key={p.name} name={p.name} role={p.role} delay={i * 80} />
-            ))}
+          <div>
+            <div className="team__assistants">
+              {editorialAssistants.map((p, i) => (
+                <Person key={p.name} name={p.name} role={p.role} delay={i * 80} />
+              ))}
+            </div>
+
+            <div className="team__sublabel" data-reveal>Student Reviewers</div>
+            <ul className="team__reviewers">
+              {studentReviewers.map((name, i) => (
+                <li key={name} data-reveal style={{ '--delay': `${(i % 4) * 60}ms` }}>
+                  <span className="team__reviewer-mono" aria-hidden="true">{initials(name)}</span>
+                  {name}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
