@@ -28,6 +28,20 @@ export const reviewers = [
   'Ms. Sumudu Dehideniya',
 ]
 
+export const studentReviewers = [
+  'Praveeni Ekanayake',
+  'D.M. Anupama Kaushalyani',
+  'S.B.N. Senavirathne',
+  'V.M.B.B.A. Malwanage',
+  'K.K.A.C. Deshan Kumarasinghe',
+  'P.A.N.D. Marambe',
+  'Nethmi Nadeesha',
+  'S.M.Y.R.B. Samarakoon',
+  'P.A.N.D. Somathilaka',
+  'U.P.D.U.K. Sewwandika',
+  'I.P. Shashikala Udani',
+]
+
 /** "Dr. Gayani I. Dias" -> "GD"; "Ms. K.K.M.G. Kavindya" -> "KK" */
 export function initials(name) {
   const parts = name
