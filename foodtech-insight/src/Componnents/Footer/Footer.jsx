@@ -61,6 +61,7 @@ function Footer() {
             <p><a href="#contents">Contents</a></p>
             <p><a href="#about">About</a></p>
             <p><a href="#contributors">Contributors</a></p>
+            <p><a href="#support">Support us</a></p>
             <p><a href={magazine.pdf} download>Download</a></p>
           </nav>
         </div>
