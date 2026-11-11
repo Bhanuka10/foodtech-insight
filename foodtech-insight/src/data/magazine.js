@@ -11,7 +11,7 @@ export const magazine = {
   pdf: '/IFSTSL.pdf',
   cover: '/images/cover.jpg',
   contentsPage: '/images/page-contents.jpg',
-  email: 'sufstapp@gmail.com',
+  email: 'sufstaapp@gmail.com',
   website: 'https://www.sab.ac.lk/app/index.php/food-science-and-technology',
   association: 'Sabaragamuwa University Food Science and Technology Association (SUFSTA)',
   department: 'Department of Food Science and Technology',
