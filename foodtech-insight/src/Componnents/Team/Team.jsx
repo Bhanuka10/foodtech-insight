@@ -63,7 +63,7 @@ function Team() {
               ))}
             </div>
 
-            <div className="team__sublabel" data-reveal>Student Reviewers</div>
+            <div className="team__sublabel" data-reveal></div>
             <ul className="team__reviewers">
               {studentReviewers.map((name, i) => (
                 <li key={name} data-reveal style={{ '--delay': `${(i % 4) * 60}ms` }}>

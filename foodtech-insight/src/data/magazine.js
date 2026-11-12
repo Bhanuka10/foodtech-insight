@@ -3,9 +3,9 @@ export const magazine = {
   tagline: 'Exploring Innovation. Transforming the Future of Food.',
   description:
     'The official E-magazine of Sabaragamuwa University Food Science and Technology Association.',
-  volume: 'Volume 1',
-  issue: 'Issue 2',
-  date: 'August 2026',
+  volume: 'Volume 3',
+  issue: 'Issue 1',
+  date: 'November 2026',
   issn: 'ISSN 2950-7065',
   pages: 84,
   pdf: '/IFSTSL.pdf',

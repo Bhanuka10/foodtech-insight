@@ -20,7 +20,7 @@ function Hero() {
         {/* ---------- Left: 3D magazine mockup ---------- */}
         <div className="hero__stage" aria-hidden="true">
           <div className="hero__backdrop" />
-          <span className="hero__issue-no">02</span>
+          <span className="hero__issue-no">01</span>
           <span className="hero__vertical">{magazine.volume} · {magazine.issue} · {magazine.date}</span>
 
           <div className="hero__float">
@@ -73,7 +73,7 @@ function Hero() {
             <div><dt>Edition</dt><dd>{magazine.volume}, {magazine.issue}</dd></div>
             <div><dt>Published</dt><dd>{magazine.date}</dd></div>
             <div><dt>ISSN</dt><dd>{magazine.issn.replace('ISSN ', '')}</dd></div>
-            <div><dt>Frequency</dt><dd>Biannual</dd></div>
+           
           </dl>
 
           <div className="hero__actions" data-reveal style={{ '--delay': '400ms' }}>

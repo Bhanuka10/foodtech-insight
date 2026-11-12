@@ -14,7 +14,7 @@ function About() {
             <img src="/images/about-fermenters.jpg" alt="Stainless steel fermentation tanks in a production hall" loading="lazy" />
             <figcaption>Precision fermentation · FT 06</figcaption>
           </figure>
-          <span className="about__folio" aria-hidden="true">Vol. 1 — No. 2</span>
+          <span className="about__folio" aria-hidden="true">Vol. 3 — No. 1</span>
         </div>
 
         <div className="about__copy">
@@ -44,7 +44,7 @@ function About() {
 
           <ul className="about__facts" data-reveal style={{ '--delay': '240ms' }}>
             <li><span>Published by</span><strong>SUFSTA</strong></li>
-            <li><span>Frequency</span><strong>Biannual</strong></li>
+            
             <li><span>Review</span><strong>Peer-reviewed</strong></li>
             <li><span>Sharing</span><strong>Open to circulate with acknowledgement</strong></li>
           </ul>

@@ -17,7 +17,7 @@ npm run preview  # preview the build
 
 ## Content
 
-All content is sourced from the Volume 1, Issue 2 (August 2026) PDF and lives in `src/data/`:
+All content is sourced from the Volume 3, Issue 1 (November 2026) PDF and lives in `src/data/`:
 
 - `articles.js` — the 26 articles (titles, authors, affiliations, PDF page numbers, descriptions drawn from each article's opening text).
 - `team.js` — chief editor, editorial board, editorial assistants and reviewers (page 2 of the magazine).

@@ -1,4 +1,4 @@
-// Source: FoodTech Insight, Volume 1, Issue 2 (August 2026), page 2.
+// Source: FoodTech Insight, Volume 3, Issue 1 (November 2026), page 2.
 export const chiefEditor = { name: 'Dr. Gayani I. Dias', role: 'Chief Editor' }
 
 export const editorialBoard = [

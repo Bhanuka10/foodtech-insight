@@ -1,4 +1,4 @@
-// Source: FoodTech Insight, Volume 1, Issue 2 (August 2026). Titles follow the
+// Source: FoodTech Insight, Volume 3, Issue 1 (November 2026). Titles follow the
 // magazine's contents pages; descriptions are drawn from each article's opening text.
 const SUSL = 'Sabaragamuwa University of Sri Lanka'
 const DFST = `Department of Food Science and Technology, Faculty of Applied Sciences, ${SUSL}`
