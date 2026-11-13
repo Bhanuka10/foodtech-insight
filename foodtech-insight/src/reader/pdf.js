@@ -15,7 +15,7 @@ export function loadMagazine() {
       ).href
       return pdfjs.getDocument({
         url: magazine.pdf,
-        // Fetch pages on demand instead of the whole 25 MB file up front.
+        // Fetch pages on demand instead of the whole 26 MB file up front.
         rangeChunkSize: 262144,
         disableAutoFetch: true,
       }).promise

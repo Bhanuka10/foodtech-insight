@@ -24,4 +24,4 @@ All content is sourced from the Volume 3, Issue 1 (November 2026) PDF and lives 
 - `magazine.js` — edition metadata, contact details and the editor's note quote.
 
 Images in `public/images/` are extracted from the magazine PDF. The downloadable PDF is
-`public/FoodTech-Insight-Vol1-Issue2.pdf`; "Read Article" links open it at the article's page.
+`public/Foodtech Insights 2026.pdf`; "Read Article" links open it at the article's page.
